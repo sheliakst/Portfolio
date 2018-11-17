@@ -1,6 +1,6 @@
 body {
     background: url(../photos/backbround/background.png) no-repeat  center;
-    background-size: 100vw;
+    background-size: 130vw 60%;
     background-position: -10vw 10vh;
 /*     background-color: rgba(0, 0, 0, 0.6);
  */
@@ -78,6 +78,11 @@ order: 1;
 
 }
 
+
+.workFoot{
+    text-align: left;
+}
+
 /* skills */
 .skills {
     grid-area: skills;
@@ -119,6 +124,17 @@ width:80vw;
 .contact {
     grid-area: contact;
 }
+
+
+.contactflexwrap{
+    display:flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 
 /* --------------- */
 /* navbar style */
