@@ -33,32 +33,36 @@ $(window).on('mousemove click', function (e) {
 
 moveBackground();
 
-$(document).ready(function(){
+$(document).ready(function () {
   AOS.init();
 
 
 
+
+
+  $(window).scroll(function () {
+    let scrollh = $(this).scrollTop();
+    let navheight = $('.navbar').height();
+  console.log(scrollh)
+    /* parallax */
+    $('.backgroundImage2 ').css('top', (scrollh * 1.201) + 'px');
   
-$(window).scroll(function () {
-  let scrollh = $(this).scrollTop();
-  let navheight = $('.navbar').height();
+    /*   scroll navbar */
+  
+  
+    if (scrollh > navheight) {
+      $('.navbar').css('background', 'rgba(119, 119, 119, 0.233)')
+      /*  $('.navbar').css('background-image', ' linear-gradient(rgba(119, 119, 119, 0.5) ,rgba(119, 119, 119, 0))') */
+  
+  
+  
+  
+  
+    } else {
+      $('.navbar').css('background', 'rgba(119, 119, 119, 0)')
+  
+    }
+  });
 
 
-
-/*   scroll navbar */  
-
-
-if (scrollh > navheight) {
-   $('.navbar').css('background', 'rgba(119, 119, 119, 0.233)')
-   /*  $('.navbar').css('background-image', ' linear-gradient(rgba(119, 119, 119, 0.5) ,rgba(119, 119, 119, 0))') */
-
-
-
-
-
-  } else {
-    $('.navbar').css('background', 'rgba(119, 119, 119, 0)')
-
-  }
-});
 });
