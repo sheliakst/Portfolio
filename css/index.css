@@ -11,7 +11,11 @@ body {
     padding: 0;
     height: 100%;
 }
-
+/* .js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+  animation-play-state: paused !important;
+} */
 
 p {
     text-align:justify;
@@ -38,10 +42,7 @@ stroke-dashoffset: 140;
 animation:  skAnim 2s linear;
 
 }
-.clickAnimationLogo{
-    animation:  skAnim 2s linear;
 
-}
 
 
 
