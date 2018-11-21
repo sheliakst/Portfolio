@@ -11,18 +11,10 @@ body {
     padding: 0;
     height: 100%;
 }
-.skillsvg{
-    margin-bottom: -40vh;
-}
+
 
 p {
     text-align:justify;
-    }
-
-
-    .skillanimationLogos{
-        margin-top: -35vh;
-
     }
 
 
@@ -46,12 +38,9 @@ stroke-dashoffset: 140;
 animation:  skAnim 2s linear;
 
 }
+.clickAnimationLogo{
+    animation:  skAnim 2s linear;
 
-
-BODY:active{
-    stroke-dasharray: 400;
-stroke-dashoffset: 140;
-animation:  skAnim 1s linear;
 }
 
 
@@ -68,12 +57,23 @@ animation:  skAnim 1s linear;
 
 .backgroundImage {
     position: fixed;
-    width: 80vw;
-    height: 90vh;
+    width: 90vw;
+    height: 100vh;
     z-index: -10;
     margin-left: -10vw;
-}
-
+    top:25vh;
+}/* 
+li:before { 
+    list-style: none;
+    content:''; 
+    display:inline-block; 
+    height:1em; 
+    width:1em; 
+    background-image:url('../photos/listStyle.svg'); 
+    background-size:contain; 
+    background-repeat:no-repeat; 
+    padding-left: 2em; 
+    } */
 .backgroundImage img {
     width: 80vw;
 }
@@ -114,11 +114,12 @@ animation:  skAnim 1s linear;
     grid-area: nav;
     position: fixed;
     z-index: 30;
+
 }
 
 /* work */
 
-.work {contact
+.work {
     grid-area: work;
     text-align: center;
 }
@@ -213,7 +214,6 @@ animation:  skAnim 1s linear;
 
 .contact {
     grid-area: contact;
-    margin-top:20vh;
 }
 
 .contactflexwrap {
@@ -228,14 +228,16 @@ animation:  skAnim 1s linear;
 /* navbar style */
 
 .navbar {
-    width: 90vw;
+    width: 100%;
+    top:0;
+    left:0;
     margin-left: -1 0px;
     margin: 0;
 }
 
 .navbar ul {
     list-style: none;
-    margin: 0;
+    margin: 2.5vh;
     padding: 0;
     overflow: hidden;
 }
@@ -261,6 +263,11 @@ animation:  skAnim 1s linear;
 
 .navbar ul li:hover {
     cursor: pointer;
+}
+
+#headname:hover {
+    letter-spacing: .5vw;
+    transition: 2s;
 }
 
 @media only screen and (max-width: 350px) {
@@ -293,10 +300,11 @@ animation:  skAnim 1s linear;
 /* navigator anim
  */
 
-.navcontent>li:before {
+ .navcontent>li:before {
     content: "";
+    position: absolute;
     height: 2px;
-    bottom: -5px;
+    bottom: -1px;
     width: 100%;
     left: 0;
     background-color: rgba(0, 0, 0, 0.459);

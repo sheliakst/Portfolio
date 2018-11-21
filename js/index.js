@@ -36,31 +36,34 @@ moveBackground();
 $(document).ready(function () {
   AOS.init();
 
+$('.skillanimationLogos').on("click",function(){
 
+  $("#path815").animate({"stroke-dashoffset": "400"},1000
+  );
+  $("#path815").animate({"stroke-dashoffset": "140"},1111
+);
+
+});
 
 
 
   $(window).scroll(function () {
     let scrollh = $(this).scrollTop();
     let navheight = $('.navbar').height();
-  console.log(scrollh)
+
     /* parallax */
     $('.backgroundImage2 ').css('top', (scrollh * 1.201) + 'px');
   
     /*   scroll navbar */
-  
-  
+   
     if (scrollh > navheight) {
-      $('.navbar').css('background', 'rgba(119, 119, 119, 0.233)')
-      /*  $('.navbar').css('background-image', ' linear-gradient(rgba(119, 119, 119, 0.5) ,rgba(119, 119, 119, 0))') */
-  
-  
-  
-  
-  
-    } else {
-      $('.navbar').css('background', 'rgba(119, 119, 119, 0)')
-  
+   
+       $('.navbar').css('background-image', ' linear-gradient(rgba(119, 119, 119, 1),rgba(119, 119, 119, 0.9),rgba(119, 119, 119, 0.8) ,rgba(119, 119, 119, 0))') ;
+
+
+      } else {
+      $('.navbar').css('background', 'rgba(119, 119, 119, 0)');
+
     }
   });
 
