@@ -77,13 +77,12 @@ $(document).ready(function () {
     let scrollh = $(this).scrollTop();
     let navheight = $('.navbar').height(),
     totalHeight=$('body').height();
-console.log(scrollh)
 
     /* parallax */
   
-    if (scrollh* 1.201 <2300){
+    if (scrollh* 1.201 <1400){
     $('.backgroundImage2 ').css('top', (scrollh * 1.201) + 'px');
-    }else{ $('.backgroundImage2 ').css('top', 2500 + 'px');
+    }else{ $('.backgroundImage2 ').css({'top':1400+'px','position':'fixed'});
   };
     /*   scroll navbar */
 
