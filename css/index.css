@@ -10,7 +10,11 @@ body {
     margin: 20px;
     padding: 0;
     height: 100%;
+    
 }
+
+
+
 /* .js-loading *,
 .js-loading *:before,
 .js-loading *:after {
@@ -63,25 +67,14 @@ animation:  skAnim 2s linear;
     z-index: -10;
     margin-left: -10vw;
     top:25vh;
-}/* 
-li:before { 
-    list-style: none;
-    content:''; 
-    display:inline-block; 
-    height:1em; 
-    width:1em; 
-    background-image:url('../photos/listStyle.svg'); 
-    background-size:contain; 
-    background-repeat:no-repeat; 
-    padding-left: 2em; 
-    } */
+}
 .backgroundImage img {
     width: 80vw;
 }
 
 .backgroundImage2 {
     position: absolute;
-    height: 300%;
+    height: 80%;
     z-index: -20;
     margin-top: 30vh;
     margin-left: 40vw;
@@ -104,9 +97,9 @@ li:before {
     grid-gap: 3vh;
     margin: 0px;
     margin-bottom:100px;
-    padding: 0;
+    padding: 3vw;
     z-index: 0;
-    overflow: hidden;
+    ;
 }
 
 /* navbar */
@@ -232,8 +225,8 @@ li:before {
     width: 100%;
     top:0;
     left:0;
-    margin-left: -1 0px;
-    margin: 0;
+    
+    transition:4s;
 }
 
 .navbar ul {
@@ -266,10 +259,6 @@ li:before {
     cursor: pointer;
 }
 
-#headname:hover {
-    letter-spacing: .5vw;
-    transition: 2s;
-}
 
 @media only screen and (max-width: 350px) {
     .navbar ul li {

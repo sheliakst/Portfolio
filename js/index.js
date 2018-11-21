@@ -37,30 +37,17 @@ $(document).ready(function () {
 
 
 
-  /*  var animationSkills = true;
- 
-   $('.skillanimationLogos').on("click", function () {
-    
-    if (animationSkills == true){
-     animationSkills = false;
-     $("#path815").animate({ "stroke-dashoffset": "400" }, 1000
-     );
-     $("#path815").animate({ "stroke-dashoffset": "140" }, 1111
-     );
-    }
-    animationSkills = true;
- 
-   });
- 
- 
-  */
+  /* animations */
+  $("#headname").mouseenter(function () {
+    $(this).animate({ "letter-spacing": ".5vw" }, 1200);
+    $(this).animate({ "letter-spacing": "0vw" }, 1200);
 
+  });
 
-
-
-
+  /* skill animation
+   */
   $(".skillsvg").on("click", function () {
-      var skillShow= $(this).find('#path815');
+    var skillShow = $(this).find('#path815');
 
     $(skillShow).animate({ "stroke-dashoffset": "400" }, 1000
     );
@@ -68,30 +55,36 @@ $(document).ready(function () {
     );
   });
 
+  /*   scroll events */
+  $('.navcontent').click(function (e) {
+    var targetHref = $(e.target).attr('href');
+    $('html, body').animate({
+      scrollTop: $(targetHref).offset().top-50
+    },1000);
+   e.preventDefault();
+  });
 
+  $("#headname").on("click", function (e) {
 
+    $('html, body').animate({
+      scrollTop: 0
+    },1000);
+   e.preventDefault();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+  });
 
   $(window).scroll(function () {
     let scrollh = $(this).scrollTop();
-    let navheight = $('.navbar').height();
+    let navheight = $('.navbar').height(),
+    totalHeight=$('body').height();
+console.log(scrollh)
 
     /* parallax */
+  
+    if (scrollh* 1.201 <2300){
     $('.backgroundImage2 ').css('top', (scrollh * 1.201) + 'px');
-
+    }else{ $('.backgroundImage2 ').css('top', 2500 + 'px');
+  };
     /*   scroll navbar */
 
     if (scrollh > navheight) {
