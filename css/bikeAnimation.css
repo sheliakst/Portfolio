@@ -28,7 +28,7 @@
     animation: rotatepad 15s linear infinite;
 }
 
-#layer1 {
+#layerbike1 {
     transform-origin: 163% 327%;
     animation: movebike 120s linear repeat;
 }

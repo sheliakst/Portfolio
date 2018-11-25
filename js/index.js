@@ -37,6 +37,8 @@ $(document).ready(function () {
 
 
 
+
+
   /* animations */
   $("#headname").mouseenter(function () {
     $(this).animate({ "letter-spacing": ".5vw" }, 1200);
@@ -88,11 +90,11 @@ $(document).ready(function () {
 
     if (scrollh > navheight) {
 
-      $('.navbar').css('background-image', ' linear-gradient(rgba(119, 119, 119, 1),rgba(119, 119, 119, 0.9),rgba(119, 119, 119, 0.8) ,rgba(119, 119, 119, 0))');
+      $('.navbar').css('display', 'none');
 
 
     } else {
-      $('.navbar').css('background', 'rgba(119, 119, 119, 0)');
+      $('.navbar').css('display', 'block');
 
     }
   });
