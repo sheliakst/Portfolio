@@ -1,9 +1,11 @@
 body {
-    /* background: url(../photos/backbround/background.png) no-repeat  center;
-    background-size: 130vw 60%;
-    background-position: -10vw 10vh; */
-    /*     background-color: rgba(0, 0, 0, 0.6);
- */
+    background: url(../photos/backbround/background_dots.png);
+    background-color:oldlace;
+
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: difference;
     font-family: 'Muli', sans-serif;
     -webkit-font-smoothing: antialiased;
     font-size: 1.2rem;
@@ -13,11 +15,8 @@ body {
     scroll-behavior: smooth;
 }
 
-
-.testsvg{
-
-    background: url(../../../../../../testcircles.svg)
-    no-repeat  center;
+.testsvg {
+    background: url(../../../../../../testcircles.svg) no-repeat center;
     background-size: 130vw 60%;
     background-position: -10vw 10vh;
 }
@@ -123,10 +122,10 @@ p {
     grid-area: work;
     text-align: center;
 }
-.introWork{
+
+.introWork {
     display: flex;
     flex-direction: column;
-
 }
 
 #textSource {
@@ -221,20 +220,19 @@ p {
     width: 5vw;
 }
 
-#scrollpath{
-
-    
-animation: scroller 2s linear 1s infinite;
+#scrollpath {
+    animation: scroller 2s linear 1s infinite;
 }
 
-
 @keyframes scroller {
-    0% {transform:translateY(0px);
-    opacity: 0;}
-    
-    100% {transform:translateY(20px);
-    opacity: 1;}
-    
+    0% {
+        transform: translateY(0px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(20px);
+        opacity: 1;
+    }
 }
 
 /* contact */
@@ -271,7 +269,7 @@ animation: scroller 2s linear 1s infinite;
 .navbar ul li {
     display: inline-block;
     position: relative;
-    margin-left: 3vw;
+    margin-left: 1vw;
     opacity: .93;
 }
 
@@ -312,6 +310,9 @@ animation: scroller 2s linear 1s infinite;
 }
 
 /* title style */
+.title{
+    text-align: center;
+}
 
 /* ---------- */
 
@@ -349,11 +350,33 @@ animation: scroller 2s linear 1s infinite;
     }
 }
 
-
 .footer {
     position: absolute;
     right: 0;
     left: 0;
     padding: 1rem;
     text-align: center;
+    color: rgba(48, 48, 48, 0.801);
+    font-size: 0.5rem;
+}
+
+
+.addNav{
+    display: none;
+    position: fixed;
+    margin-right: 2vw;
+    background-color: rgba(103, 104, 104, 0.342);
+    width: 100%;
+    height: 10vh;
+    z-index: 35;
+}
+
+#navicon{
+width:5vh;
+width: 5vh;
+margin-top: 2vh;
+margin-left: 88vw;
+
+
+
 }

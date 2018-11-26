@@ -61,7 +61,7 @@ $(document).ready(function () {
   $('.navcontent').click(function (e) {
     var targetHref = $(e.target).attr('href');
     $('html, body').animate({
-      scrollTop: $(targetHref).offset().top-50
+      scrollTop: $(targetHref).offset().top-150
     },1000);
    e.preventDefault();
   });
@@ -91,10 +91,12 @@ $(document).ready(function () {
     if (scrollh > navheight) {
 
       $('.navbar').css('display', 'none');
+      $('.addNav').css('display', 'block');
 
 
     } else {
       $('.navbar').css('display', 'block');
+      $('.addNav').css('display', 'none');
 
     }
   });
