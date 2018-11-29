@@ -12,7 +12,6 @@ body {
     margin: 0px;
     padding: 0;
     height: 100%;
-    scroll-behavior: smooth;
 }
 
 .testsvg {
