@@ -13,7 +13,11 @@
 }
 
 .scrollAnimation {
-    margin-bottom: 45vh;
+    margin-bottom: 15vh;
+}
+
+.laptopDisplay{
+    margin-bottom:5vh;
 }
 
 .workDisplay {

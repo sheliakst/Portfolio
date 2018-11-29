@@ -131,6 +131,7 @@ p {
     margin: 2vw;
 }
 
+
 .workDisplay li {
     list-style: circle;
 }
@@ -187,9 +188,9 @@ p {
 
 .skillset {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: top;
 }
 
 .skillset li {
@@ -216,7 +217,7 @@ p {
  */
 
 #scrollAn {
-    width: 5vw;
+    height:12vw;
 }
 
 #scrollpath {
@@ -379,7 +380,7 @@ p {
     animation: showNav .4s linear ;
 }
 .addNavBackground{
-   background-image: linear-gradient(to bottom,rgba(172, 172, 172, 0.945),rgba(172, 172, 172, 0.664));
+   background-image: linear-gradient(to bottom,oldlace,rgba(219, 219, 219, 0.664));
  }
 
 .addNav ul {
@@ -390,8 +391,8 @@ p {
 .addNav ul li{
 list-style: none;
 float: left;
-margin-left:8.2vw;
-margin-top:2.5vh
+margin-left: 10.2vw;
+margin-top: 3.5vh;
 }
 
 .addNav ul li a{
