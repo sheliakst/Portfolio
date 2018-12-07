@@ -1,6 +1,9 @@
 body {
-    background: url(../photos/backbround/background_dots.png);
-    background-color:oldlace;
+/*     background: url(../photos/backbround/background_dots.png);
+ */    
+ 
+ 
+ background-color:#fdf5e6;
 
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -16,18 +19,8 @@ body {
 }
 .textSource{
     opacity:0;
-}
-.testsvg {
-    background: url(../../../../../../testcircles.svg) no-repeat center;
-    background-size: 130vw 60%;
-    background-position: -10vw 10vh;
-}
+}                                                       
 
-/* .js-loading *,
-.js-loading *:before,
-.js-loading *:after {
-  animation-play-state: paused !important;
-} */
 
 p {
     text-align: justify;
@@ -117,7 +110,6 @@ p {
 }
 
 /* navbar */
-
 .navbar {
     margin-left:0vw;
     position: fixed;
@@ -127,7 +119,6 @@ p {
 }
 
 /* work */
-
 .work {
     grid-area: work;
     text-align: center;
@@ -378,7 +369,7 @@ p {
 
 
 #navicon{
-    width: 5vh;
+    width: 3.3vh;
     margin-top:-1vh;
     margin-left:-2vw;
     transition: opacity 2s;
