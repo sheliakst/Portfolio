@@ -1,0 +1,28 @@
+
+
+
+
+.selectwork li {
+    list-style-type: none;
+    margin-bottom: 2vh;
+    text-align: left;
+}
+
+.selectworkMobile li {
+    list-style-type: none;
+    margin-bottom: 2vh;
+    text-align: left;
+}
+
+.rotate {
+    animation: worklistanim 1s linear;
+}
+
+@keyframes worklistanim {
+    50% {
+        transform: rotate(222deg)
+    }
+    100% {
+        transform: rotate(0deg)
+    }
+}
